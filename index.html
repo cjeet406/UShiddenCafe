@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>It's a Hidden Café | Your Cozy Escape</title>
+    <meta name="description" content="Specialty coffee, handcrafted drinks, and a home-like vibe. Visit It's a Hidden Café for a relaxing experience.">
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,600&family=Outfit:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header id="main-header">
+        <nav class="container">
+            <div class="logo">
+                <span class="logo-text">It's a <span class="accent">Hidden</span> Café</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">Our Story</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#visit">Visit Us</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="#menu" class="btn btn-sm">Order Now</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+                <i data-lucide="menu"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero">
+            <div class="hero-bg"></div>
+            <div class="container hero-content">
+                <div class="hero-text-wrapper">
+                    <span class="badge">Asian-owned Business</span>
+                    <h1>Your Cozy Escape for Coffee & Conversations</h1>
+                    <p>Specialty coffee, handcrafted drinks, and a home-like vibe in the heart of the city.</p>
+                    <div class="hero-actions">
+                        <a href="#menu" class="btn btn-primary">View Menu</a>
+                        <a href="#visit" class="btn btn-secondary">Visit Us</a>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-indicator">
+                <span>Scroll to explore</span>
+                <i data-lucide="chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about">
+            <div class="container grid">
+                <div class="about-image">
+                    <div class="image-stack">
+                        <div class="img-main"><img src="assets/about-1.jpg" alt="Café Interior"></div>
+                        <div class="img-sub"><img src="assets/about-2.jpg" alt="Barista at work"></div>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <span class="section-tag">Our Story</span>
+                    <h2>A Hidden Gem for the Soul</h2>
+                    <p>Tucked away from the bustle, It's a Hidden Café was born from a love for slow mornings and deep conversations. We aren't just a coffee shop; we're a sanctuary designed to feel like your favorite living room.</p>
+                    <p>Whether you're looking for a quiet corner to study, a warm place to chat with friends, or just a perfectly pulled espresso from our friendly team, you'll find it here. Every cup is brewed with intention, and every visitor is treated like family.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-num">4.9</span>
+                            <span class="stat-label">Rating</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-num">100%</span>
+                            <span class="stat-label">Cozy Vibe</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Menu Section -->
+        <section id="menu" class="menu">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Taste the Magic</span>
+                    <h2>On the Menu</h2>
+                    <p>Handcrafted drinks made with premium ingredients and a lot of love.</p>
+                </div>
+
+                <div class="menu-tabs">
+                    <button class="tab-btn active" data-category="coffee">Coffee & Classics</button>
+                    <button class="tab-btn" data-category="specialty">Specialty Lattes</button>
+                    <button class="tab-btn" data-category="drinks">Mocktails & Refreshers</button>
+                    <button class="tab-btn" data-category="tea">Premium Teas</button>
+                </div>
+
+                <div class="menu-grid">
+                    <!-- Coffee -->
+                    <div class="menu-item" data-category="coffee">
+                        <div class="item-info">
+                            <h3>Americano Coffee</h3>
+                            <p>Smooth and bold espresso with hot water.</p>
+                        </div>
+                        <span class="price">$4.00</span>
+                    </div>
+                    <div class="menu-item" data-category="coffee">
+                        <div class="item-info">
+                            <h3>Espresso</h3>
+                            <p>A concentrated shot of our signature blend.</p>
+                        </div>
+                        <span class="price">$4.00</span>
+                    </div>
+                    <div class="menu-item" data-category="coffee">
+                        <div class="item-info">
+                            <h3>Cappuccino</h3>
+                            <p>Perfectly balanced espresso and steamed milk foam.</p>
+                        </div>
+                        <span class="price">$4.60</span>
+                    </div>
+                    <div class="menu-item" data-category="coffee">
+                        <div class="item-info">
+                            <h3>Latte</h3>
+                            <p>Creamy espresso with silky micro-foam.</p>
+                        </div>
+                        <span class="price">$4.60</span>
+                    </div>
+                    <div class="menu-item" data-category="coffee">
+                        <div class="item-info">
+                            <h3>Cold Brew</h3>
+                            <p>Steeped for 18 hours for a smooth, low-acid finish.</p>
+                        </div>
+                        <span class="price">$4.00</span>
+                    </div>
+
+                    <!-- Specialty -->
+                    <div class="menu-item" data-category="specialty">
+                        <div class="item-info">
+                            <h3>Matcha Latte</h3>
+                            <p>Ceremonial grade matcha whisked to perfection.</p>
+                        </div>
+                        <span class="price">$5.00</span>
+                    </div>
+                    <div class="menu-item" data-category="specialty">
+                        <div class="item-info">
+                            <h3>Turmeric Latte</h3>
+                            <p>Warm spices and golden turmeric for a healthy glow.</p>
+                        </div>
+                        <span class="price">$5.00</span>
+                    </div>
+                    <div class="menu-item" data-category="specialty">
+                        <div class="item-info">
+                            <h3>Pistachio Latte</h3>
+                            <span class="item-tag">Bestseller</span>
+                            <p>Rich pistachio cream blended with signature espresso.</p>
+                        </div>
+                        <span class="price">$5.50</span>
+                    </div>
+
+                    <!-- Drinks -->
+                    <div class="menu-item" data-category="drinks">
+                        <div class="item-info">
+                            <h3>Aperol Spritz (Mocktail)</h3>
+                            <p>Non-alcoholic take on the classic refreshing spritz.</p>
+                        </div>
+                        <span class="price">$6.00</span>
+                    </div>
+                    <div class="menu-item" data-category="drinks">
+                        <div class="item-info">
+                            <h3>Lavender Lemonade</h3>
+                            <p>House-made lavender syrup with fresh lemon.</p>
+                        </div>
+                        <span class="price">$4.00</span>
+                    </div>
+                    <div class="menu-item" data-category="drinks">
+                        <div class="item-info">
+                            <h3>Apple Cider</h3>
+                            <p>Warm or chilled, perfectly spiced.</p>
+                        </div>
+                        <span class="price">$4.00</span>
+                    </div>
+
+                    <!-- Tea -->
+                    <div class="menu-item" data-category="tea">
+                        <div class="item-info">
+                            <h3>Ashwaganda Tea</h3>
+                            <p>Adaptogenic blend for stress relief.</p>
+                        </div>
+                        <span class="price">$4.00</span>
+                    </div>
+                    <div class="menu-item" data-category="tea">
+                        <div class="item-info">
+                            <h3>Sencha</h3>
+                            <p>Classic Japanese green tea with grassy notes.</p>
+                        </div>
+                        <span class="price">$4.00</span>
+                    </div>
+                    <div class="menu-item" data-category="tea">
+                        <div class="item-info">
+                            <h3>Hojicha</h3>
+                            <p>Roasted green tea with a nutty, smoky finish.</p>
+                        </div>
+                        <span class="price">$4.00</span>
+                    </div>
+                    <div class="menu-item" data-category="tea">
+                        <div class="item-info">
+                            <h3>Earl Grey Tea</h3>
+                            <p>Black tea scented with bergamot orange.</p>
+                        </div>
+                        <span class="price">$4.00</span>
+                    </div>
+                </div>
+                
+                <div class="menu-footer">
+                    <p>All items are prepared fresh. Ask us about our seasonal desserts like our famous <strong>Tiramisu</strong>!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Moments</span>
+                    <h2>Life at the Café</h2>
+                </div>
+                <div class="gallery-grid">
+                    <div class="gallery-item"><img src="assets/gallery-1.jpg" alt="Coffee Art"></div>
+                    <div class="gallery-item"><img src="assets/gallery-2.jpg" alt="Café Corner"></div>
+                    <div class="gallery-item"><img src="assets/gallery-3.jpg" alt="Dessert Display"></div>
+                    <div class="gallery-item"><img src="assets/gallery-4.jpg" alt="Customers Chatting"></div>
+                    <div class="gallery-item"><img src="assets/gallery-5.jpg" alt="Iced Coffee"></div>
+                    <div class="gallery-item"><img src="assets/gallery-6.jpg" alt="Cozy Seating"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Reviews Section -->
+        <section id="reviews" class="reviews">
+            <div class="container">
+                <div class="reviews-wrapper">
+                    <div class="review-header">
+                        <div class="rating">
+                            <span class="stars">★★★★★</span>
+                            <span class="score">4.9/5</span>
+                        </div>
+                        <h2>What Our Community Says</h2>
+                    </div>
+                    <div class="reviews-slider">
+                        <div class="review-card">
+                            <p>"Great coffee and comfy seating. The perfect place to hide away from the world for an hour."</p>
+                            <span class="author">— Sarah M.</span>
+                        </div>
+                        <div class="review-card">
+                            <p>"The Pistachio Latte is a game changer! Perfect place to relax or study. Love the Asian-owned vibe."</p>
+                            <span class="author">— Jason K.</span>
+                        </div>
+                        <div class="review-card">
+                            <p>"A true hidden gem. Friendly owner and the best Tiramisu I've ever had in the city."</p>
+                            <span class="author">— Emily R.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Instagram Feed (Subtle) -->
+        <section class="instagram-feed">
+            <div class="container">
+                <div class="insta-header">
+                    <i data-lucide="instagram"></i>
+                    <span>@HiddenCafeCozy</span>
+                </div>
+                <div class="insta-grid">
+                    <div class="insta-item"><img src="assets/insta-1.jpg" alt="Instagram post"></div>
+                    <div class="insta-item"><img src="assets/insta-2.jpg" alt="Instagram post"></div>
+                    <div class="insta-item"><img src="assets/insta-3.jpg" alt="Instagram post"></div>
+                    <div class="insta-item"><img src="assets/insta-4.jpg" alt="Instagram post"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Visit Us Section -->
+        <section id="visit" class="visit">
+            <div class="container grid">
+                <div class="visit-info">
+                    <span class="section-tag">Visit Us</span>
+                    <h2>We'd Love to Meet You</h2>
+                    <div class="contact-details">
+                        <div class="detail-item">
+                            <i data-lucide="map-pin"></i>
+                            <div>
+                                <h4>Location</h4>
+                                <p>123 Cozy Lane, Hidden Alleyway<br>Downtown, Cityville 56789</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i data-lucide="clock"></i>
+                            <div>
+                                <h4>Hours</h4>
+                                <p>Mon - Fri: 8:00 AM - 7:00 PM<br>Sat - Sun: 9:00 AM - 8:00 PM</p>
+                            </div>
+                        </div>
+                        <div class="detail-item">
+                            <i data-lucide="phone"></i>
+                            <div>
+                                <h4>Call Now</h4>
+                                <p>(123) 456-7890</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="visit-actions">
+                        <a href="#" class="btn btn-primary">Get Directions</a>
+                        <a href="tel:1234567890" class="btn btn-secondary">Call Now</a>
+                    </div>
+                </div>
+                <div class="visit-map">
+                    <div class="map-placeholder">
+                        <img src="assets/map.png" alt="Map Location">
+                        <div class="map-pin-icon">
+                            <i data-lucide="map-pin"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3>It's a Hidden Café</h3>
+                    <p>Your cozy escape for coffee & conversations.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">Our Story</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#visit">Visit Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-newsletter">
+                    <h4>Stay Updated</h4>
+                    <p>Join our newsletter for secret menu updates.</p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Your email address" required>
+                        <button type="submit">Join</button>
+                    </form>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 It's a Hidden Café. All rights reserved.</p>
+                <div class="footer-badges">
+                    <span class="badge-subtle">Asian-Owned</span>
+                    <span class="badge-subtle">Eco-Friendly</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
